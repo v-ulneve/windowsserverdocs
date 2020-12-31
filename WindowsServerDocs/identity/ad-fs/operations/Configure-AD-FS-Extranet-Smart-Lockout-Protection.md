@@ -138,7 +138,7 @@ The AccountActivity table is populated both during ‘Log-Only' mode and ‘Enfo
 This feature makes use of Security Audit logs, so auditing must be enabled in AD FS as well as the local policy on all AD FS servers.
 
 ### Configuration Instructions
-Extranet Smart Lockout uses the ADFS property **ExtranetLockoutEnabled**. This property was previously used to control “Extranet Soft Lockout” in Server 2012R2. If Extranet Soft Lockout was enabled, to view the current property configuration, run ` Get-AdfsProperties` .
+Extranet Smart Lockout uses the ADFS property **ExtranetLockoutEnabled**. This property was previously used to control “Extranet Soft Lockout” in Server 2012R2. If Extranet Soft Lockout was enabled, to view the current property configuration, run ` Get-AdfsProperties | select ExtranetLockoutEnabled` .
 
 ### Configuration Recommendations
 When configuring the Extranet Smart Lockout, follow best practices for setting thresholds:
