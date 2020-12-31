@@ -207,7 +207,7 @@ This behavior can be overridden by passing the -Server parameter.
 `Get-ADFSAccountActivity user@contoso.com`
 
   Properties:
-    - BadPwdCountFamiliar: Incremented when an authentication is successful from a known location.
+    - BadPwdCountFamiliar: Incremented when an authentication is unsuccessful from a known location.
     - BadPwdCountUnknown: Incremented when an authentication is unsuccessful from an unknown location
     - LastFailedAuthFamiliar: If authentication was unsuccessful from a familiar location, LastFailedAuthUnknown is set to time of unsuccessful authentication
     - LastFailedAuthUnknown: If authentication was unsuccessful from an unknown location, LastFailedAuthUnknown is set to time of unsuccessful authentication
